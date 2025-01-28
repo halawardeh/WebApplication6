@@ -21,19 +21,8 @@
                         <th scope="col">Book Level</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>math</td>
-                        <td>sciences</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>arabic</td>
-                        <td>language</td>
-                        <td>9</td>
-                    </tr>
+                <tbody id="bookTable" runat="server" >
+                   
 
                 </tbody>
             </table>

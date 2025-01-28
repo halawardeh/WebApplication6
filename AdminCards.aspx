@@ -36,7 +36,7 @@
          <div class="card-body">
              <h5 class="card-title">Add Book</h5>
              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-             <asp:Button runat="server" ID="addBook" class="btn btn-primary" Text="Add Book" OnClick="addBook_Click" />
+             <asp:Button runat="server" ID="addBook" class="btn btn-primary" Text="Add_Book" OnClick="addBook_Click" />
 
          </div>
      </div>

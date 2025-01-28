@@ -33,13 +33,13 @@ namespace WebApplication6
         protected global::System.Web.UI.WebControls.TextBox ID;
 
         /// <summary>
-        /// BookName control.
+        /// bookName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox BookName;
+        protected global::System.Web.UI.WebControls.TextBox bookName;
 
         /// <summary>
         /// bookKind control.
@@ -60,13 +60,13 @@ namespace WebApplication6
         protected global::System.Web.UI.WebControls.TextBox bookLevel;
 
         /// <summary>
-        /// AddBook control.
+        /// AddBook1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddBook;
+        protected global::System.Web.UI.WebControls.Button AddBook1;
 
         /// <summary>
         /// lblMessage control.

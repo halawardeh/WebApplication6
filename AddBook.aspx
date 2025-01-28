@@ -64,7 +64,7 @@
         <asp:TextBox runat="server"  type="text" id="ID" name="id" placeholder="Enter Book ID"></asp:TextBox>
 
         <label for="name">Name</label>
-       <asp:TextBox runat="server"  type="text" id="BookName"  placeholder="Enter Book Name"></asp:TextBox>
+       <asp:TextBox runat="server"  type="text" id="bookName"  placeholder="Enter Book Name"></asp:TextBox>
 
         <label for="kind">Kind</label>
         <asp:TextBox runat="server"  type="text" id="bookKind"  placeholder="Enter Book Type"></asp:TextBox>
@@ -72,7 +72,7 @@
         <label for="level">Level</label>
         <asp:TextBox runat="server"  type="text" id="bookLevel"  placeholder="Enter Book Level"></asp:TextBox>
 
-        <asp:Button runat="server" ID="AddBook" Text="Add"  OnClick="AddBook_Click" />
+        <asp:Button runat="server" ID="AddBook1" Text="Add"  OnClick="AddBook_Click" />
         <asp:Label runat="server" ID="lblMessage"  Visible="false"></asp:Label>
 
     </div>
