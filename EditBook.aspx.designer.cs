@@ -11,7 +11,7 @@ namespace WebApplication6
 {
 
 
-    public partial class AdminCards
+    public partial class EditBook
     {
 
         /// <summary>
@@ -24,30 +24,57 @@ namespace WebApplication6
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// allBooksAdmin control.
+        /// bookId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button allBooksAdmin;
+        protected global::System.Web.UI.WebControls.TextBox bookId;
 
         /// <summary>
-        /// addBook control.
+        /// bookName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addBook;
+        protected global::System.Web.UI.WebControls.TextBox bookName;
 
         /// <summary>
-        /// editBook control.
+        /// bookType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button editBook;
+        protected global::System.Web.UI.WebControls.TextBox bookType;
+
+        /// <summary>
+        /// bookLevel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox bookLevel;
+
+        /// <summary>
+        /// updateBook control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button updateBook;
+
+        /// <summary>
+        /// lblMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMessage;
     }
 }

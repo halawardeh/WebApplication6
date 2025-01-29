@@ -23,5 +23,10 @@ namespace WebApplication6
         {
             Response.Redirect("AllBooks.aspx");
         }
+
+        protected void editBook_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EditBook.aspx");
+        }
     }
 }

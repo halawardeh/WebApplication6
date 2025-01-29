@@ -15,18 +15,7 @@ namespace WebApplication6
 
         }
                            
-       // <label for="id">ID</label>
-       // <asp:TextBox runat = "server"  type="text" id="ID" name="id" placeholder="Enter Book ID"></asp:TextBox>
-
-       // <label for="name">Name</label>
-       //<asp:TextBox runat = "server"  type="text" id="BookName"  placeholder="Enter Book Name"></asp:TextBox>
-
-       // <label for="kind">Kind</label>
-       // <asp:TextBox runat = "server"  type="text" id="bookKind"  placeholder="Enter Book Type"></asp:TextBox>
-
-       // <label for="level">Level</label>
-       // <asp:TextBox runat = "server"  type="text" id="bookLevel"  placeholder="Enter Book Level"></asp:TextBox>
-
+     
         protected void AddBook_Click(object sender, EventArgs e)
         {
             string Bookid = ID.Text;

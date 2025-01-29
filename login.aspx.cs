@@ -9,11 +9,16 @@ namespace UserAuthApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (!IsPostBack)
+            {
+                // Clear previous session data on page load
+                Session.Clear();
+            }
         }
         protected void btnRegister_Click(object sender, EventArgs e)
         {
             Response.Redirect("Register.aspx"); // to redirct to the sign up page
-
         }
         protected void btnLogin_Click(object sender, EventArgs e)
         {
@@ -21,8 +26,6 @@ namespace UserAuthApp
             string userpassword = txtPassword.Text;
 
             String filePath = Server.MapPath("~/App_Data/users.txt");
-
-            
 
             if (String.IsNullOrEmpty(userEmail) || String.IsNullOrEmpty(userpassword))
             {
@@ -34,25 +37,31 @@ namespace UserAuthApp
 
             else
             {
+                
+
                 string[] users = File.ReadAllLines(filePath);
 
-                foreach(string user in users)
+                foreach (string user in users)
                 {
                     string[] userData = user.Split(',');
 
                     if(userEmail=="admin@gmail.com" && userpassword == "12345")
                     {
+                        Session["UserEmail"] = "admin@gmail.com";
                         lblMessage.Text = "Login seccessfully!";
                         lblMessage.ForeColor = System.Drawing.Color.Green;
                         lblMessage.Visible = true;
-                        Response.Redirect("AdminCards.aspx");
+                        Response.Redirect("Home2.aspx");
+                        return;
                     }
-                    else if (userEmail == userData[1] &&  userpassword == userData[3])
+                    else if (userEmail == userData[1] &&  userpassword == userData[2])
                     {
+                        Session["UserEmail"] = userEmail;
                         lblMessage.Text = "Login seccessfully!";
                         lblMessage.ForeColor = System.Drawing.Color.Green;
                         lblMessage.Visible = true;
-                        Response.Redirect("StudentsCards.aspx");
+                        Response.Redirect("Home.aspx");
+                        return;
                     }
                 }
             }

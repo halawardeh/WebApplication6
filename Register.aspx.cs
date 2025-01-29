@@ -45,7 +45,7 @@ namespace UserAuthApp
                 {
                     File.Create(filePAth); //create a file if not exist
                 }
-                string UserData = $"{username},{email},{password},{repassword},"; //formatting
+                string UserData = $"{username},{email},{password},{repassword}\n"; //formatting
 
                 File.AppendAllText(filePAth, UserData); //add user data to the usersFile
 

@@ -11,7 +11,7 @@ namespace WebApplication6
 {
 
 
-    public partial class AdminCards
+    public partial class Profile
     {
 
         /// <summary>
@@ -24,30 +24,39 @@ namespace WebApplication6
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// allBooksAdmin control.
+        /// username control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button allBooksAdmin;
+        protected global::System.Web.UI.WebControls.TextBox username;
 
         /// <summary>
-        /// addBook control.
+        /// email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addBook;
+        protected global::System.Web.UI.WebControls.TextBox email;
 
         /// <summary>
-        /// editBook control.
+        /// password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button editBook;
+        protected global::System.Web.UI.WebControls.TextBox password;
+
+        /// <summary>
+        /// editProfile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button editProfile;
     }
 }

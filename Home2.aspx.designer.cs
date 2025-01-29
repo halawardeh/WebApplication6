@@ -11,7 +11,7 @@ namespace WebApplication6
 {
 
 
-    public partial class AdminCards
+    public partial class Home2
     {
 
         /// <summary>
@@ -24,30 +24,21 @@ namespace WebApplication6
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// allBooksAdmin control.
+        /// ViewProfile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button allBooksAdmin;
+        protected global::System.Web.UI.WebControls.Button ViewProfile;
 
         /// <summary>
-        /// addBook control.
+        /// StudentsCards control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addBook;
-
-        /// <summary>
-        /// editBook control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button editBook;
+        protected global::System.Web.UI.WebControls.Button StudentsCards;
     }
 }

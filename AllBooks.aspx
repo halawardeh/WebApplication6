@@ -22,8 +22,6 @@
                     </tr>
                 </thead>
                 <tbody id="bookTable" runat="server" >
-                   
-
                 </tbody>
             </table>
 
