@@ -20,7 +20,7 @@ namespace WebApplication6
 
                 if (Session["UserEmail"] != null && Session["UserEmail"].ToString() == email.Text)
                 {
-                    email.Text = Session["UserEmail"].ToString();
+                  
                 }
 
             }

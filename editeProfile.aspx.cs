@@ -13,5 +13,10 @@ namespace WebApplication6
         {
 
         }
+
+        protected void editProfile_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

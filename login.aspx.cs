@@ -26,7 +26,7 @@ namespace UserAuthApp
             string userpassword = txtPassword.Text;
 
             String filePath = Server.MapPath("~/App_Data/users.txt");
-
+            String logpath = Server.MapPath("~/App_Data/logedUsers.txt");
             if (String.IsNullOrEmpty(userEmail) || String.IsNullOrEmpty(userpassword))
             {
                 lblMessage.Text = "All Feilds Are Required";
@@ -40,6 +40,7 @@ namespace UserAuthApp
                 
 
                 string[] users = File.ReadAllLines(filePath);
+                string users_log = File.ReadAllText(logpath);
 
                 foreach (string user in users)
                 {
@@ -56,7 +57,18 @@ namespace UserAuthApp
                     }
                     else if (userEmail == userData[1] &&  userpassword == userData[2])
                     {
-                        Session["UserEmail"] = userEmail;
+
+
+                        if (!File.Exists(logpath)) // location to file 
+                        {
+                            File.Create(logpath); //create a file if not exist
+                        }
+                        string UserData = $"{userData[0]},{userData[1]},{userData[2]},\n"; //formatting
+
+                        File.AppendAllText(logpath, UserData); //add user data to the usersFile
+
+
+
                         lblMessage.Text = "Login seccessfully!";
                         lblMessage.ForeColor = System.Drawing.Color.Green;
                         lblMessage.Visible = true;

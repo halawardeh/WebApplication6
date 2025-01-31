@@ -51,7 +51,7 @@
      }
      </style>
 </head>
-<body>
+<body><form>
          <div class="profile-container">
     <h2>Profile</h2>
     <div class="form-group">
@@ -70,6 +70,6 @@
 </div>
 </form>
 
-    </form>
+
 </body>
 </html>
